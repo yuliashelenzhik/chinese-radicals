@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Radical from "./Radical";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <main>
+        <div className="title">
+          <h2>Chinese Radicals</h2>
+        </div>
+        <Radical />
+      </main>
+      <footer>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Copyright &copy; Yulia Yuste 2022 | Credits:
+          汉字部首教程，北京大学出版社
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      </footer>
+    </>
   );
 }
 
